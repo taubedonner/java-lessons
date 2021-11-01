@@ -36,8 +36,9 @@ public class Subtask2 {
             /** Crutchy */
             User tmp = new UserJson(user);
             tmp.setPassword("********");
+            System.out.println(serialize(tmp));
+        } else {
+            System.out.println(serialize(user));
         }
-
-        System.out.println(serialize(user));
     }
 }
